@@ -6,94 +6,99 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.donuts_app_compose.R
+import com.example.donut.R
 
-val interFontFamily = FontFamily(Font(R.font.inter))
+private val Inter = FontFamily(
+    Font(R.font.inter, FontWeight.Normal),
+    Font(R.font.inter_medium, FontWeight.Medium),
+    Font(R.font.inter_semi_bold, FontWeight.SemiBold),
+    Font(R.font.inter_bold, FontWeight.Bold),
+)
 
 val Typography = Typography(
     headlineLarge = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
-        fontSize = 54.sp,
+        fontSize = 52.sp,
         color = Pink90
     ),
     headlineMedium = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
-        fontSize = 30.sp,
+        fontSize = 28.sp,
         color = Pink90
     ),
     headlineSmall = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
-        fontSize = 20.sp,
+        fontSize = 18.sp,
         color = Black
     ),
     titleLarge = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.Medium,
-        fontSize = 18.sp,
+        fontSize = 16.sp,
         color = Black80
     ),
     titleMedium = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.Medium,
-        fontSize = 16.sp,
+        fontSize = 14.sp,
         color = Black
     ),
     titleSmall = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.Medium,
-        fontSize = 14.sp,
+        fontSize = 12.sp,
         color = Black60
     ),
     bodyLarge = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.Medium,
-        fontSize = 18.sp,
+        fontSize = 16.sp,
         color = Pink60
     ),
     bodyMedium = TextStyle(
-        fontFamily = interFontFamily,
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp,
-        color = Black60
-    ),
-    bodySmall = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         color = Black60
     ),
+    bodySmall = TextStyle(
+        fontFamily = Inter,
+        fontWeight = FontWeight.Normal,
+        fontSize = 10.sp,
+        color = Black60
+    ),
     displayLarge = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
-        fontSize = 30.sp,
+        fontSize = 28.sp,
         color = Black
     ),
     displayMedium = TextStyle(
-        fontFamily = interFontFamily,
-        fontSize = 22.sp,
+        fontFamily = Inter,
+        fontSize = 20.sp,
         color = Black
     ),
     displaySmall = TextStyle(
-        fontFamily = interFontFamily,
-        fontSize = 14.sp,
+        fontFamily = Inter,
+        fontSize = 12.sp,
     ),
     labelLarge = TextStyle(
-        fontFamily = interFontFamily,
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
-        fontSize = 20.sp,
+        fontSize = 18.sp,
     ),
-    labelMedium =TextStyle(
-        fontFamily = interFontFamily,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 16.sp,
-    ),
-    labelSmall = TextStyle(
-        fontFamily = interFontFamily,
+    labelMedium = TextStyle(
+        fontFamily = Inter,
         fontWeight = FontWeight.SemiBold,
         fontSize = 14.sp,
     ),
+    labelSmall = TextStyle(
+        fontFamily = Inter,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 12.sp,
+    ),
 
-)
+    )
